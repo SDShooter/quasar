@@ -24,3 +24,12 @@ quasar build
 
 ### Customize the configuration
 See [Configuring quasar.conf.js](https://v2.quasar.dev/quasar-cli/quasar-conf-js).
+
+
+### Deploy spa to gcloud
+```
+cp app.yaml ./dist/spa
+cd dist/spa
+gcloud app deploy
+
+```
