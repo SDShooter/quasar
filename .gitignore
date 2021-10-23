@@ -1,6 +1,9 @@
 .DS_Store
 .thumbs.db
 node_modules
+/api/.secrets
+/api/package-lock.json
+.vscode/*
 
 # Quasar core related directories
 .quasar
