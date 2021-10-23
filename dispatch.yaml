@@ -1,0 +1,3 @@
+dispatch:
+- url: "api.pogs.ml/*"
+  service: api

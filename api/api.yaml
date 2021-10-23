@@ -1,0 +1,21 @@
+runtime: nodejs16 # or nodejs10
+#not sure php55 is the best option
+instance_class: F1
+service: api
+
+handlers:
+  # Serve all static files with urls ending with a file extension
+- url: /(.*\..+)$ 
+  static_files: \1
+  upload: (.*\..+)$
+  secure: always
+
+  # catch all handler to express routes
+- url: /.*
+  script: auto
+  secure: always
+
+env_variables:
+    HOST: '0.0.0.0'
+    NODE_ENV: production
+    #PORT: 80
