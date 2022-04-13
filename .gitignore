@@ -4,6 +4,9 @@ node_modules
 /api/.secrets
 /api/package-lock.json
 .vscode/*
+.secrets
+.env
+package-lock.json
 
 # Quasar core related directories
 .quasar
